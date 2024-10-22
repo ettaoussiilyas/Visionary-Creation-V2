@@ -5,14 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Visionary Creations</title>
-    <script src="tailwind.js"></script>
+    <script src="../tailwind.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+            width: 100vw !important;
+        }
+        body {
+            width: 100% !important;
+        }
+        @media (min-width: 768px) {
+            .container {
+            max-width: inherit !important;
+    }}
+    @media (min-width: 320px) {
+            .container {
+            max-width: 100wv;
+    }
+}
+    </style>
 </head>
 
-<body class="w-screen h-screen bg-white overflow-x-hidden">
-    <div class="container flex flex-col justify-center items-center w-screen h-screen bg-center"
-        style="background-image: url('./images/header.jpg');">
+<body class=" w-screen overflow-x-hidden h-screen bg-white">
+    <div class="container h-full flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover"
+        style="background-image: url('../images/header.jpg');">
         <p class="text-center text-white font-thin text-2xl z-50">Small Team With Big Ideas</p>
         <h1 class="text-center text-white font-bold text-8xl z-50">Visionary Creations</h1>
         <div class="container flex justify-center items-center p-5 z-50 md:mb-40">
@@ -24,21 +41,21 @@
     <div class="container flex flex-col items-center bg-white w-screen">
         <div class="w-8/12 bg-white sm:-translate-y-1/2 flex justify-center items-center border rounded-lg">
             <div class="w-1/3 h-full bg-white flex justify-center items-center flex-col border rounded-lg">
-                <img src="images/first.svg" alt="first" class="w-20 h-20 m-3">
+                <img src="../images/first.svg" alt="first" class="w-20 h-20 m-3">
                 <h1 class="text-slate-900 text-center font-bold m-3">UX/UI Design</h1>
                 <p class="text-center font-thin text-slate-700 m-3">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Distinctio, dicta fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
                     dicta fugiat? </p>
             </div>
             <div class="w-1/3 h-full bg-white flex justify-center items-center flex-col border rounded-lg">
-                <img src="images/second.svg" alt="first" class="w-16 h-16 m-3">
+                <img src="../images/second.svg" alt="first" class="w-16 h-16 m-3">
                 <h1 class="text-slate-900 text-center font-bold m-3">Web Development</h1>
                 <p class="text-center font-thin text-slate-700 m-3">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Distinctio, dicta fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
                     dicta fugiat? </p>
             </div>
             <div class="w-1/3 h-full bg-white flex justify-center items-center flex-col border rounded-lg">
-                <img src="images/third.svg" alt="first" class="w-16 h-16 m-3">
+                <img src="../images/third.svg" alt="first" class="w-16 h-16 m-3">
                 <h1 class="text-slate-900 text-center font-bold m-3">App Design</h1>
                 <p class="text-center font-thin text-slate-700 m-3">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Distinctio, dicta fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
@@ -48,7 +65,7 @@
         <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg flex">
             <div class="w-1/2">
                 <img alt="A group of people having a meeting in a modern office" class="rounded-lg" height="400"
-                    src="images/about.jpg" width="600" />
+                    src="../images/about.jpg" width="600" />
             </div>
             <div class="w-1/2 pl-8">
                 <h2 class="text-gray-600 text-lg">
