@@ -8,6 +8,9 @@ module.exports = {
         colors: {
           'custom-ree': '#fff',
         },
+        screens: {
+          'sm-320': '320px',
+        },
       },
     },
     plugins: [],
