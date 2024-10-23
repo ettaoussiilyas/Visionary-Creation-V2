@@ -1,3 +1,54 @@
+/* Static Styling & Variables (Fonts, Icons) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fira Sans */
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/Fira_Sans/FiraSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/Fira_Sans/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+      format("woff2"),
+    url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+/* End */
+
 /* Footer Styling */
 .footer-bg {
   background-image: url("../images/about.jpg");
