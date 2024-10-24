@@ -66,20 +66,49 @@
         </button>
       </div>
     </div>
-    <div class="container flex flex-col items-center bg-white w-screen">
-      <div
-        class="w-8/12 sm-320:w-full sm-320:flex-col bg-white sm:-translate-y-1/2 flex justify-center items-center border rounded-lg"
-      >
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <div class=" flex flex-col justify-center items-center w-full h-screen bg-center bg-no-repeat bg-cover"
+        style="background-image: url('./images/header.jpg');">
+
+        <p class="text-center text-white font-thin text-xl lg:text-2xl">Small Team With Big Ideas</p>
+        <h1 class="text-center text-white font-bold text-3xl lg:text-6xl">Visionary Creations</h1>
+        <div class="container flex justify-center items-center">
+            <a href="#service" class="rounded-3xl border py-2 px-4 text-white mt-10 mr-2"
+                style="background: #FF214F;border-color: #FF214F;">Our Service</a>
+            <a href="#contact" class="rounded-3xl border py-2 px-4 text-white bg-transparent mt-10">Contact Us</a>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center w-full ">
+
         <div
-          class="w-1/3 h-full bg-white flex justify-center items-center flex-col border rounded-lg"
-        >
-          <img src="../images/first.svg" alt="first" class="w-20 h-20 m-3" />
-          <h1 class="text-slate-900 text-center font-bold m-3">UX/UI Design</h1>
-          <p class="text-center font-thin text-slate-700 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            dicta fugiat?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Distinctio, dicta fugiat?
-          </p>
+            class="flex flex-col justify-center items-center w-full md:flex-row md:-translate-y-1/2  md:w-9/12 md:items-center md:justify-center">
+            <div class="bg-white p-8 rounded-lg shadow-md text-center md:w-1/3">
+                <div class="text-red-500 text-4xl mb-4">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">UX/UI Design</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi,
+                    repellat esse laborum explicabo quia.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center md:w-1/3">
+                <div class="text-red-500 text-4xl mb-4">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h2 class="text-nowrap text-xl -ml-4 font-semibold mb-2">Web Development</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi,
+                    repellat esse laborum explicabo quia.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center md:w-1/3">
+                <div class="text-red-500 text-4xl mb-4">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">App Design</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis excepturi,
+                    repellat esse laborum explicabo quia.</p>
+            </div>
         </div>
         <div
           class="w-1/3 h-full bg-white flex justify-center items-center flex-col border rounded-lg"
@@ -271,19 +300,228 @@
           </h2>
         </div>
 
-        <!-- Grid -->
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-          <!-- Card 1 -->
-          <div class="flex items-start space-x-4">
-            <img src="../images/avatar-5.jpg" Client photo" class="w-12 h-12
-            rounded-full object-cover" />
-            <div>
-              <p class="text-gray-600 mb-4">
-                Working with their team exceeded my expectations in every way.
-                Their attention to detail and commitment to excellence
-                transformed our project vision into reality.
-              </p>
-              <h3 class="font-medium text-gray-800">Albert Drahem</h3>
+        <section class="py-16 bg-gray-50" id="portfolio">
+            <div class="container mx-auto px-4">
+                <div class="flex w-full flex-col items-center mb-12">
+                    <p class="text-gray-600 mb-3">Our Awesome Works</p>
+                    <h2 class="text-3xl font-bold">Our Portfolio</h2>
+                </div>
+                
+                            <!-- Hidden checkbox controls for each image -->
+                <input type="checkbox" class="hidden peer/img1" id="modal-1">
+                <input type="checkbox" class="hidden peer/img2" id="modal-2">
+                <input type="checkbox" class="hidden peer/img3" id="modal-3">
+                <input type="checkbox" class="hidden peer/img4" id="modal-4">
+                <input type="checkbox" class="hidden peer/img5" id="modal-5">
+                <input type="checkbox" class="hidden peer/img6" id="modal-6">
+    
+                <!-- Main Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                    <!-- Left Column -->
+                    <div class="space-y-10">
+                        <!-- First Image -->
+                        <div class="relative group">
+                            <img src="./images/folio-1.jpg" alt="Stationery layout" 
+                                class="w-full aspect-[3/3] object-cover transition duration-300 ease-in-out" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <!-- Search Button -->
+                                    <label for="modal-1" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <!-- Link Button -->
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Second Image -->
+                        <div class="relative group">
+                            <img src="./images/folio-4.jpg" alt="Minimal clock design" 
+                                class="w-full aspect-[3/3] object-cover transition duration-300 ease-in-out" />
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <label for="modal-2" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Middle Column -->
+                    <div class="space-y-10">
+                        <div class="relative group">
+                            <img src="./images/folio-2.jpg" alt="Business cards" 
+                                class="w-full aspect-[3/2] object-cover" />
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <label for="modal-3" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="relative group">
+                            <img src="./images/folio-5.jpg" alt="Wooden desk organizer" 
+                                class="w-full aspect-[3/4] object-cover" />
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <label for="modal-4" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Right Column -->
+                    <div class="space-y-10">
+                        <div class="relative group">
+                            <img src="./images/folio-3.jpg" alt="White desk organizer" 
+                                class="w-full aspect-[3/4] object-cover" />
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <label for="modal-5" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="relative group">
+                            <img src="./images/folio-6.jpg" alt="Orange and white office supplies" 
+                                class="w-full aspect-[3/2] object-cover" />
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex gap-4">
+                                    <label for="modal-6" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 1 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img1:flex">
+                    <label for="modal-1" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-1" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-1.jpg" alt="Stationery layout" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 2 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img2:flex">
+                    <label for="modal-2" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-2" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-4.jpg" alt="Minimal clock design" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+                <!-- Modal for Image 3 (Completing the cut-off part) -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img3:flex">
+                    <label for="modal-3" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-3" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-2.jpg" alt="Business cards" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 4 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img4:flex">
+                    <label for="modal-4" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-4" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-5.jpg" alt="Wooden desk organizer" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 5 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img5:flex">
+                    <label for="modal-5" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-5" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-3.jpg" alt="White desk organizer" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 6 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img6:flex">
+                    <label for="modal-6" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-6" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-6.jpg" alt="Orange and white office supplies" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
             </div>
           </div>
 
@@ -302,128 +540,31 @@
               </p>
               <h3 class="font-medium text-gray-800">Same Daniells</h3>
             </div>
-          </div>
-        </div>
-        <div
-          class="relative mt-20 min-h-[400px] w-full flex items-center justify-center bg-gray-900"
-        >
-          <img
-            src="../images/about.jpg"
-            alt="background"
-            class="absolute inset-0 w-full h-full object-cover opacity-20"
-          />
-          <div class="text-center z-10 flex flex-col items-center">
-            <h2 class="text-3xl font-semibold text-white mb-8">
-              See Our Intro Video
-            </h2>
-            <a
-              href="https://youtu.be/pqFvu9ZNH2c?si=-AzfiVJ7Jkj_hn7b"
-              target="_blank"
-              class="group relative inline-flex"
-            >
-              <div
-                class="w-16 h-16 rounded-full border-2 border-red-500 flex items-center justify-center"
-              >
-                <div
-                  class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-95"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-8 h-8 text-white ml-1"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-              <div
-                class="absolute -inset-2 rounded-full border border-red-500/30 animate-pulse"
-              ></div>
-              <div
-                class="absolute -inset-3 rounded-full border border-red-500/20 animate-pulse delay-150"
-              ></div>
-              <div
-                class="absolute -inset-4 rounded-full border border-red-500/10 animate-pulse delay-300"
-              ></div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <div
-        class="container flex flex-col items-center bg-white w-screen h-screen"
-      >
-        <section class="py-16 bg-gray-50">
-          <!-- Header -->
-          <div class="container mx-auto px-4">
+        </section>
+        <section class="py-16 px-4" id="testimonial">
+
             <div class="text-center mb-12">
               <p class="text-gray-600 mb-2">News Feeds</p>
               <h2 class="text-3xl font-bold">Our Blog</h2>
             </div>
-
-            <!-- Blog Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <!-- Blog Card 1 -->
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="relative h-48">
-                  <img
-                    src="../images/blog-3.jpg"
-                    alt="Art Supplies"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-3">
-                    Social Media Success Secrets
-                  </h3>
-                  <p class="text-gray-600 mb-4">
-                    Transform your brand's digital presence with our expert team
-                    of creative innovators. We blend cutting-edge design,
-                    strategic social media management, and dynamic web solutions
-                    to elevate your business. From stunning logos to viral video
-                    content, our agency delivers visionary results that capture
-                    attention and drive engagement.
-                  </p>
-                  <div
-                    class="flex items-center justify-between text-sm text-gray-500"
-                  >
-                    <div class="flex items-center space-x-2">
-                      <svg
-                        class="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                        />
-                      </svg>
-                      <span>123</span>
+        
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                <div class="relative border p-6 rounded-lg shadow-lg">
+                    <div class="absolute -left-6 top-1/2 transform -translate-y-1/2">
+                        <img src="./images/avatar-5.jpg" alt="Client photo" class="w-12 h-12 rounded-full object-cover border-4 border-white" />
                     </div>
-                    <div class="flex items-center space-x-2">
-                      <svg
-                        class="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                        />
-                      </svg>
-                      <span>123</span>
+                    <div class="pl-16">
+                        <p class="text-gray-600 mb-4">Working with their team exceeded my expectations in every way. Their attention to detail and commitment to excellence transformed our project vision into reality.</p>
+                        <h3 class="font-medium text-gray-800">Albert Drahem</h3>
+                    </div>
+                </div>
+                <div class="relative border p-6 rounded-lg shadow-lg">
+                    <div class="absolute -left-6 top-1/2 transform -translate-y-1/2">
+                        <img src="./images/avatar-6.jpg" alt="Client photo" class="w-12 h-12 rounded-full object-cover border-4 border-white" />
+                    </div>
+                    <div class="pl-16">
+                        <p class="text-gray-600 mb-4">Working with their team exceeded my expectations in every way. Their attention to detail and commitment to excellence transformed our project vision into reality.</p>
+                        <h3 class="font-medium text-gray-800">Albert Drahem</h3>
                     </div>
                   </div>
                   <a
@@ -432,16 +573,162 @@
                     >Read More...</a
                   >
                 </div>
-              </div>
+            </div>
+            
+            <input type="checkbox" id="video-modal" class="hidden peer">
+            <!-- video main -->
+            <div class="relative mt-20 min-h-[400px] w-full flex items-center justify-center bg-gray-900">
+                <img src="./images/about.jpg" alt="background" class="absolute inset-0 w-full h-full object-cover opacity-20">
+                <div class="text-center z-10 flex flex-col items-center">
+                    <h2 class="text-3xl font-semibold text-white mb-8">See Our Intro Video</h2>
+    
+                    <label for="video-modal" class="group relative inline-flex cursor-pointer">
+                        <div class="w-16 h-16 rounded-full border-2 border-red-500 flex items-center justify-center">
+                            <div class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-95">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" 
+                                    fill="currentColor" 
+                                    class="w-8 h-8 text-white ml-1">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute -inset-2 rounded-full border border-red-500/30 animate-pulse"></div>
+                        <div class="absolute -inset-3 rounded-full border border-red-500/20 animate-pulse delay-150"></div>
+                        <div class="absolute -inset-4 rounded-full border border-red-500/10 animate-pulse delay-300"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked:flex">
+                <label for="video-modal" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+            
+                <div class="relative z-10 w-full max-w-4xl mx-4">
+                    
+                    <label for="video-modal" class="absolute -top-10 right-0 text-white hover:text-red-500 transition-colors cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
+                    
+                    <div class="relative pt-[56.25%]">
+                        <iframe
+                            class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/pqFvu9ZNH2c"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-gray-50" id="blog">
+            <!-- Header -->
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <p class="text-gray-600 mb-2">News Feeds</p>
+                    <h2 class="text-3xl font-bold">Our Blog</h2>
+                </div>
 
-              <!-- Blog Card 2 -->
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="relative h-48">
-                  <img
-                    src="../images/blog-2.jpg"
-                    alt="Marketing"
-                    class="w-full h-full object-cover"
-                  />
+                <!-- Blog Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative h-48">
+                            <img src="./images/blog-3.jpg" alt="Art Supplies" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Social Media Success Secrets</h3>
+                            <p class="text-gray-600 mb-4">Transform your brand's digital presence with our expert team
+                                of creative innovators. We blend cutting-edge design, strategic social media management,
+                                and dynamic web solutions to elevate your business. From stunning logos to viral video
+                                content, our agency delivers visionary results that capture attention and drive
+                                engagement.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                    </svg>
+                                    <span>123</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <span>123</span>
+                                </div>
+                            </div>
+                            <a href="#" class="inline-block mt-4 text-pink-500 hover:text-pink-600">Read More...</a>
+                        </div>
+                    </div>
+                    <!-- Blog Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative h-48">
+                            <img src="./images/blog-2.jpg" alt="Marketing" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Building Digital Experiences</h3>
+                            <p class="text-gray-600 mb-4">From concept to launch, we architect websites that blend
+                                stunning aesthetics with seamless functionality. Our development team crafts responsive,
+                                user-centric platforms optimized for performance and engagement. Every line of code and
+                                pixel serves a purpose in elevating your digital presence.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                    </svg>
+                                    <span>434</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <span>987</span>
+                                </div>
+                            </div>
+                            <a href="#" class="inline-block mt-4 text-pink-500 hover:text-pink-600">Read More...</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative h-48">
+                            <img src="./images/blog-1.jpg" alt="Code" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">Crafting Unforgettable Brands</h3>
+                            <p class="text-gray-600 mb-4">Behind every powerful brand lies a thoughtfully crafted logo
+                                and design system. Our creative team combines market research, color psychology, and
+                                innovative typography to build visual identities that resonate. From startups to
+                                enterprises, we shape designs that leave lasting impressions.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                    </svg>
+                                    <span>164</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <span>425</span>
+                                </div>
+                            </div>
+                            <a href="#" class="inline-block mt-4 text-pink-500 hover:text-pink-600">Read More...</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-6">
                   <h3 class="text-xl font-semibold mb-3">
