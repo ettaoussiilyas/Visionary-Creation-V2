@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Fira Sans */
 @font-face {
   font-family: "Fira Sans";
