@@ -258,160 +258,220 @@
                     <p class="text-gray-600 mb-3">Our Awesome Works</p>
                     <h2 class="text-3xl font-bold">Our Portfolio</h2>
                 </div>
-
+                
+                            <!-- Hidden checkbox controls for each image -->
+                <input type="checkbox" class="hidden peer/img1" id="modal-1">
+                <input type="checkbox" class="hidden peer/img2" id="modal-2">
+                <input type="checkbox" class="hidden peer/img3" id="modal-3">
+                <input type="checkbox" class="hidden peer/img4" id="modal-4">
+                <input type="checkbox" class="hidden peer/img5" id="modal-5">
+                <input type="checkbox" class="hidden peer/img6" id="modal-6">
+    
+                <!-- Main Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
                     <!-- Left Column -->
                     <div class="space-y-10">
                         <!-- First Image -->
                         <div class="relative group">
-                            <img src="./images/folio-1.jpg" alt="Stationery layout"
+                            <img src="./images/folio-1.jpg" alt="Stationery layout" 
                                 class="w-full aspect-[3/3] object-cover transition duration-300 ease-in-out" />
                             <!-- Hover Overlay -->
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
                                     <!-- Search Button -->
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-1" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
+                                    </label>
                                     <!-- Link Button -->
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
-
+    
                         <!-- Second Image -->
                         <div class="relative group">
-                            <img src="./images/folio-4.jpg" alt="Minimal clock design"
+                            <img src="./images/folio-4.jpg" alt="Minimal clock design" 
                                 class="w-full aspect-[3/3] object-cover transition duration-300 ease-in-out" />
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-2" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- Middle Column -->
                     <div class="space-y-10">
-                        <!-- Repeat the same structure for middle column images -->
                         <div class="relative group">
-                            <img src="./images/folio-2.jpg" alt="Business cards"
+                            <img src="./images/folio-2.jpg" alt="Business cards" 
                                 class="w-full aspect-[3/2] object-cover" />
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-3" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
-
+    
                         <div class="relative group">
-                            <img src="./images/folio-5.jpg" alt="Wooden desk organizer"
+                            <img src="./images/folio-5.jpg" alt="Wooden desk organizer" 
                                 class="w-full aspect-[3/4] object-cover" />
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-4" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+    
                     <!-- Right Column -->
                     <div class="space-y-10">
-                        <!-- Repeat the same structure for right column images -->
                         <div class="relative group">
-                            <img src="./images/folio-3.jpg" alt="White desk organizer"
+                            <img src="./images/folio-3.jpg" alt="White desk organizer" 
                                 class="w-full aspect-[3/4] object-cover" />
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-5" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
-
+    
                         <div class="relative group">
-                            <img src="./images/folio-6.jpg" alt="Orange and white office supplies"
+                            <img src="./images/folio-6.jpg" alt="Orange and white office supplies" 
                                 class="w-full aspect-[3/2] object-cover" />
-                            <div
-                                class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-pink-500 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div class="flex gap-4">
-                                    <button class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors">
+                                    <label for="modal-6" class="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
-                                    </button>
-                                    <button
-                                        class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
+                                    </label>
+                                    <button class="p-3 bg-transparent border border-black rounded-full hover:bg-gray-100 transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 1 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img1:flex">
+                    <label for="modal-1" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-1" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-1.jpg" alt="Stationery layout" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 2 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img2:flex">
+                    <label for="modal-2" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-2" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-4.jpg" alt="Minimal clock design" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+                <!-- Modal for Image 3 (Completing the cut-off part) -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img3:flex">
+                    <label for="modal-3" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-3" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-2.jpg" alt="Business cards" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 4 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img4:flex">
+                    <label for="modal-4" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-4" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-5.jpg" alt="Wooden desk organizer" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 5 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img5:flex">
+                    <label for="modal-5" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-5" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-3.jpg" alt="White desk organizer" class="max-h-[80vh] w-auto">
+                    </div>
+                </div>
+    
+                <!-- Modal for Image 6 -->
+                <div class="fixed inset-0 z-50 items-center justify-center hidden peer-checked/img6:flex">
+                    <label for="modal-6" class="absolute inset-0 bg-black/80 cursor-pointer"></label>
+                    <div class="relative z-10 max-w-4xl mx-4">
+                        <label for="modal-6" class="absolute -top-10 right-0 text-white hover:text-pink-500 transition-colors cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </label>
+                        <img src="./images/folio-6.jpg" alt="Orange and white office supplies" class="max-h-[80vh] w-auto">
                     </div>
                 </div>
             </div>
@@ -623,7 +683,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-16 px-4">
+        <section class="py-16 px-4" id="testimonial">
 
             <div class="text-center mb-12">
                 <p class="text-gray-600 text-sm uppercase tracking-wider mb-2">Testimonial</p>
